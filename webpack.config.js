@@ -1,13 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: '/evercode-test/', // Убедитесь, что это совпадает с basename
   },
   module: {
     rules: [
@@ -53,6 +52,14 @@ module.exports = {
     static: path.resolve(__dirname, 'dist'),
     port: 3000,
     hot: true,
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: '/evercode-test/',
+    },
+    devMiddleware: {
+      publicPath: '/evercode-test/',
+    },
+    open: {
+      target: '/evercode-test/',
+    },
   },
 };
