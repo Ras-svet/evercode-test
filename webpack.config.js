@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/evercode-test/',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -23,13 +24,6 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.json$/,
-        type: 'asset/resource',
-        generator: {
-          filename: '[name][ext]',
-        },
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
