@@ -1,0 +1,24 @@
+.period {
+  display: flex;
+  gap: 10px;
+
+  &__button {
+    margin: 0;
+    padding: 10px 21px;
+    background-color: transparent;
+    border: 1px solid #2b2b36;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+
+    &_active {
+      background-color: #ababc5;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: #ababc5;
+    }
+  }
+}
