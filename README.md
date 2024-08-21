@@ -29,8 +29,8 @@
 | **GET** |[/data/blockchain/list](https://min-api.cryptocompare.com/data/blockchain/list) |Получить список всех доступных монет и их данных.|-|[Пример запроса](https://min-api.cryptocompare.com/data/blockchain/list)|
 
 ## Ссылки:
-[GitHub Pages проекта](https://ras-svet.github.io/evercode-test/)
-[API](https://min-api.cryptocompare.com/documentation?key=Blockchain&cat=blockchainListOfCoins)
+- **[GitHub Pages проекта](https://ras-svet.github.io/evercode-test/)**
+- **[API](https://min-api.cryptocompare.com/documentation?key=Blockchain&cat=blockchainListOfCoins)**
 
 ## Установка
 После выполнения всех шагов приложение будет доступно по адресу [localhost:3000/evercode-test/](localhost:3000/evercode-test/)
