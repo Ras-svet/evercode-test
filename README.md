@@ -27,7 +27,7 @@
 
 |Метод|Эндпоинт|Описание|Параметры|Пример запроса|
 |---------|------------|------------|--------------|-----------|
-| **GET** |[/data/exchange/histohour](https://min-api.cryptocompare.com/data/exchange/histohour) |Получить почасовой объем обменов для указанной монеты.|`tsym` (обязательный): Символ целевой монеты (например, BTC).<br>`limit` (опциональный): Количество записей для получения (по умолчанию 168).<br>`aggregate` (опциональный): Период агрегации данных (для дневных данных - дни, для почасовых - часы, для минутных - минуты) [По умолчанию - 1].|[Пример запроса](https://min-api.cryptocompare.com/data/exchange/histohour?tsym=BTC&limit=10)|
+| **GET** |[/data/exchange/histohour](https://min-api.cryptocompare.com/data/exchange/histohour) |Получить почасовой объем обменов для указанной монеты.|`tsym` (обязательный): Символ целевой монеты (например, BTC).<br>`limit` (опциональный): Количество записей для получения (по умолчанию 168).<br>`aggregate` (опциональный): Период агрегации данных (для дневных данных - дни, для почасовых - часы, для минутных - минуты) (по умолчанию - 1).|[Пример запроса](https://min-api.cryptocompare.com/data/exchange/histohour?tsym=BTC&limit=10)|
 | **GET** |[/data/blockchain/list](https://min-api.cryptocompare.com/data/blockchain/list) |Получить список всех доступных монет и их данных.|-|[Пример запроса](https://min-api.cryptocompare.com/data/blockchain/list)|
 
 ## Установка
